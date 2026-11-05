@@ -76,6 +76,7 @@ const bool DEBUG_MODEL =
  * multi-device input feature.
  */
 const bool ENABLE_MULTI_DEVICE_INPUT = input_flags::enable_multi_device_input() &&
+        input_flags::enable_multi_device_same_window_stream() &&
         !input_flags::disable_reject_touch_on_stylus_hover();
 
 // Category (=namespace) name for the input settings that are applied at boot time
